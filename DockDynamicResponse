@@ -1,6 +1,6 @@
 FROM node:18-alpine
 
-RUN sudo npm install -g @mockoon/cli@8.4.0 --unsafe-perm=true --allow-root
+RUN npm install -g @mockoon/cli@8.4.0 --unsafe-perm=true --allow-root
 COPY ./DynamicResponse.json ./DynamicResponse.json
 
 # Install curl for healthcheck and tzdata for timezone support.
