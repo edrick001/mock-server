@@ -1,0 +1,78 @@
+{
+  "uuid": "9cf2964d-1780-4b24-a331-dc1ae6e11be4",
+  "lastMigration": 27,
+  "name": "Dynamic Response",
+  "endpointPrefix": "",
+  "latency": 0,
+  "port": 3002,
+  "hostname": "",
+  "folders": [],
+  "routes": [
+    {
+      "uuid": "c6edd09c-e92b-4749-a15f-ace2c0d756d6",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "dynamic-resp",
+      "responses": [
+        {
+          "uuid": "29bc18e8-7cae-408b-be5a-79e927ff2222",
+          "body": "{\r\n    \"error_schema\": {\r\n        \"error_code\": \"ESB-00-000\",\r\n        \"error_message\": {\r\n            \"english\": \"Success\",\r\n            \"indonesian\": \"Berhasil\"\r\n        }\r\n    },\r\n    \"output_schema\": {\r\n        \"name\": \"Bambang\",\r\n        \"age\": \"17\",\r\n        \"address\": \"Tangerang\",\r\n        \"phone\": \"08123456789\",\r\n        \"address2\": [\r\n          \"Tangerang\",\r\n          \"Bandung\"\r\n        ]\r\n    }\r\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    }
+  ],
+  "rootChildren": [
+    {
+      "type": "route",
+      "uuid": "c6edd09c-e92b-4749-a15f-ace2c0d756d6"
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "data": []
+}
